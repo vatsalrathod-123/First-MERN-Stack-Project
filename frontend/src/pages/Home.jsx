@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import { MdOutlineAddBox } from "react-icons/md";
 import BooksCard from "../components/home/BooksCard.jsx";
 import BooksTable from "../components/home/BooksTable.jsx";
-import Header from "../components/Header.jsx";
 
 const Home = () => {
   const [books, setBooks] = useState([]);
@@ -26,7 +25,6 @@ const Home = () => {
   }, []);
   return (
     <>
-      <Header />
       <div className="p-4">
         <div className="flex gap-x-4">
           <button
